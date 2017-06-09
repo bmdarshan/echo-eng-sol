@@ -1,10 +1,17 @@
 import React from 'react';
+import { Switch } from "react-router";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import EchoEngHome from "./pages/home/components/echoEngHome.jsx";
+
 
 export default class App extends React.Component {
   render() {
     return (
-     <div style={{textAlign: 'center'}}>
-        <h1>Echo Engineering Solutions</h1>
-      </div>);
+     <BrowserRouter>
+      <Switch>
+        <Route path="/" component={EchoEngHome} />
+      </Switch>
+    </BrowserRouter>);
   }
 }
