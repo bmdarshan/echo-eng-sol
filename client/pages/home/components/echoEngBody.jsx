@@ -1,11 +1,14 @@
 import React from "react";
+import { PageHeader } from "react-bootstrap";
+
 
 export default class EchoEngBody extends React.Component {
 	
   render() {
     return (
       <div>
-       <p>Echo Engineering Body</p>
+       <PageHeader>Echo engineering solutions</PageHeader>
+       <p>An IOT company</p>
       </div>
     );
   }
