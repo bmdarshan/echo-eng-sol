@@ -9,11 +9,11 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<BrowserRouter>
-			<div>
-					<Route path="/" component={EchoEngHome} />
-					<Route path="/about" component={EchoEngHome} />
+				<Switch>
+					<Route exact path="/" component={EchoEngHome} />
+					<Route exact path="/about" component={EchoEngHome} />
 					<Route path="/team" component={EchoEngTeam} />
-					</div>
+				</Switch>
 			</BrowserRouter>
 		);
 	}
